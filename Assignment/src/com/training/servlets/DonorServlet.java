@@ -68,9 +68,9 @@ public class DonorServlet extends HttpServlet {
 		System.out.println(blooddonor);
 		int rowsAdded=dao.add(blooddonor);
 		System.out.println("Row Added :="+ rowsAdded);
-		//request.setAttribute("blooddonor", blooddonor.toString());
-		//RequestDispatcher dispatcher = request.getRequestDispatcher("success.jsp");
-		//dispatcher.forward(request, response);
+		request.setAttribute("rowAdded", rowsAdded);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("success.jsp");
+		dispatcher.forward(request, response);
 	}
 
 }

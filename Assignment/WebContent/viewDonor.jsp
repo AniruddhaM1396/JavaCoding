@@ -33,7 +33,7 @@
 </head>
 <body>
 <header>
-<%@ include file="index.html" %></header>
+<%@ include file="menu.html" %></header>
 <table id="customers">
 <tr>
 	<th>Name</th>

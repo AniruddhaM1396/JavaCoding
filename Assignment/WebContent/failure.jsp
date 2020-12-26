@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>Row Added := ${rowAdded}</p>
-<a href="index.jsp">Main Page</a>
+<h1>Login Unsuccessful</h1>
 </body>
 </html>

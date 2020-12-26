@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>Row Added := ${rowAdded}</p>
-<a href="index.jsp">Main Page</a>
+<%session.invalidate();
+  response.sendRedirect("index.jsp");
+%>
 </body>
 </html>

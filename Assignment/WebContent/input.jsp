@@ -1,3 +1,4 @@
+<%@page import="jdk.internal.misc.FileSystemOption"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -8,7 +9,18 @@
 </head>
 <body>
 <header>
-<%@ include file="index.html" %></header>
+<%@ include file="menu.html" %></header>
+
+<div class="container">
+<%
+        String isUser=(String)session.getAttribute("user");
+       	
+        //redirect user to home page if already logged in
+        if(isUser==null){
+        	response.sendRedirect("login.jsp");
+        }
+ %>
+
 	<form action="donor" method="post">
 	
 	<label for="">Donor Name</label>
@@ -39,5 +51,6 @@
 	<label for=""></label>
 	<input type="submit" value="Add" />
 </form>
+</div>
 </body>
 </html>

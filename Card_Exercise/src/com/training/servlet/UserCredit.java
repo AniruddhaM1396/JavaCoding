@@ -11,15 +11,11 @@ public class UserCredit {
 		this.user = new HashMap<String,Integer>();
 		
 		this.user.put("ani", 2000);
-		this.user.put("xyz", 3000);
-		this.user.put("pqr", 2000);
+		this.user.put("rama", 3000);
+		this.user.put("ravi", 2000);
 	}
 
 	public Map<String, Integer> getUser() {
 		return user;
 	}
-	
-	
-	
-
 }

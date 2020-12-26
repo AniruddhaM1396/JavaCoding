@@ -7,7 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>Row Added := ${rowAdded}</p>
-<a href="index.jsp">Main Page</a>
+<ul>
+
+	<li><a href="login.jsp">Login </a></li> 
+ 	<li><a href="donor">View Donor </a></li>
+</ul>
 </body>
 </html>
