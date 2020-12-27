@@ -1,3 +1,0 @@
-Doctor [doctorId=105, doctorName=Gaurav, mobileNumber=744422100, specialization=Ortho, dateOfBirth=1971-07-21]
-Doctor [doctorId=105, doctorName=Gaurav, mobileNumber=744422100, specialization=Ortho, dateOfBirth=1971-07-21]
-Doctor [doctorId=105, doctorName=Gaurav, mobileNumber=744422100, specialization=Ortho, dateOfBirth=1971-07-21]
