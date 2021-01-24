@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="https://code.jquery.com/jquery-1.12.4.js"
+integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+crossorigin="anonymous"></script>
+<style type="text/css">
+body {
+text-align:center;
+  font-family: Arial;
+  background:url(Blood.jpg) no-repeat;
+    background-size: cover;
+}
+h1{
+text-align:center;
+  font-family: Arial;
+}
+
+a {
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+
+a:hover{
+    color:  rgb(66,99,245);
+    background-color: whitesmoke;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+function print(data){
+$.each(data,function(key,value){
+var row=$('<tr/>');
+var column="<td>"+value.donorName+"</td>"+
+"<td>"+value.donorAge+"</td>"+"<td>"+value.donorGender+"</td>"+
+"<td>"+value.donorBloodgroup+"</td>"+
+"<td>"+value.donorPhone+"</td>"+
+"<td>"+value.dateOfBirth+"</td>";
+var markup=row.append(column);
+$("#bloodDonorTable").append(markup);
+})
+}
+var config={
+url:'http://localhost/8080/api/v1/donors/',
+method:'GET',
+success:function(resp){print(resp);},
+failure:function(resp){console.log(resp);}
+}
+$.ajax(config);
+});
+</script>
+<title>Blood Donors</title>
+</head>
+<body>
+<h2>Blood Donors</h2>
+<a href="list">Donor List</a>
+<a href="donor">Add Donor</a>
+<a href="updateBloodDonor">Update Donor</a>
+<a href="deleteBloodDonor">Delete Donor</a>
+<a href="eligiblegroup">Donor Required</a>
+<a href="bloodCamps.html">Blood Camp</a>
+
+<h1>Every blood donor is a life saver.</h1>
+</body>
+</html>
